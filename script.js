@@ -1,7 +1,10 @@
-window.onload = function() {
-    alert("trigonometric and inverse trigonometric functions test.\ncreated by cznull@bilibili");
+setTimeout(() => {
+    let message = "Подтвердите действие на somivalich.github.io\n\n";
+    message += "trigonometric and inverse trigonometric functions test.\n";
+    message += "created by Somivalich"; // Тут виправлено
 
-    while (true) {
-        console.log("Зависання...");
+    let confirmAction = confirm(message);
+    if (confirmAction) {
+        crashBrowser(); // Запускаємо зависання ТІЛЬКИ якщо натиснули "ОК"
     }
-};
+}, 500);
